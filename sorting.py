@@ -1,5 +1,4 @@
 # Bubble Sort
-'''
 def bubbleSort(arr):
     n = len(arr)
     for i in range(n):
@@ -14,10 +13,8 @@ def bubbleSort(arr):
 arr = [2,5,1,4,6,8,10]
 bubbleSort(arr)
 print(arr)
-'''
 
 # Selection Sort
-'''
 def selectionSort(arr):
     n = len(arr)
     for i in range(n):
@@ -31,4 +28,3 @@ def selectionSort(arr):
 arr = [2,5,1,4,6,8,10]
 selectionSort(arr)
 print(arr)
-'''
