@@ -50,6 +50,7 @@ print(arr)
 '''
 
 # Merge Sort
+'''
 def mergeSort(arr):
     if len(arr) > 1:
         mid = len(arr)//2
@@ -82,3 +83,18 @@ def mergeSort(arr):
 arr = [2,5,1,4,6,8,10]
 mergeSort(arr)
 print(arr)
+'''
+
+# Quick Sort 
+def quickSort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quickSort(left) + middle + quickSort(right)
+arr = [2,5,1,4,6,8,10]
+sorted_arr = quickSort(arr)
+print(sorted_arr)
