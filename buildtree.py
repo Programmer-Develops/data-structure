@@ -28,3 +28,11 @@ def inorder_traversal(root):
 
 def preorder_traversal(root):
     return [root.val] + preorder_traversal(root.left) + preorder_traversal(root.right) if root else []
+
+# Example usage
+preorder = [3,9,20,15,7]
+inorder = [9,3,15,20,7]
+
+root = buildTree(preorder, inorder)
+print("Inorder Traversal:", inorder_traversal(root))
+print("Preorder Traversal:", preorder_traversal(root))
