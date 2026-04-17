@@ -128,3 +128,16 @@ class BST:
         if not node:
             return []
         return self._inorder(node.left) + [node.val] + self._inorder(node.right)
+
+# Example usage of the BST class
+bst = BST()
+bst.insert(5)
+bst.insert(3)
+bst.insert(7)
+print("Inorder Traversal:", bst.inorder())
+print("Search for 3:", bst.search(3))
+print("Search for 4:", bst.search(4))
+print("Minimum:", bst.find_min())
+print("Maximum:", bst.find_max())
+bst.delete(3)
+print("Inorder Traversal after deleting 3:", bst.inorder())
