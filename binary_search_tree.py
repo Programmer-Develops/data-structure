@@ -112,3 +112,8 @@ print("Searching for 90:", bst.search(90))  # False
 print("\nInorder Traversal after insertions:")
 bst.inorder()
 
+print("Deleting leaf node (20):")
+bst.delete(20)
+
+print("Inorder Traversal after deleting 20:")
+bst.inorder()
